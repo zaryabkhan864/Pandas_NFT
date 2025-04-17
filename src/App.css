@@ -1151,11 +1151,17 @@ body[data-aos-duration='225'] [data-aos],
 
   .rec-c {
     width: 14rem;
-    display: flex;
+    display: flex
+;
     position: relative;
-    right: -1rem;
-    top: -4rem;
-  }
+    right: 2rem;
+    top: -5rem;
+}
+.mint-btn {
+  font-weight: 700;
+  font-size: 2rem;
+  padding: 1px 96px;
+}
 
   .ca {
     position: relative;
@@ -2845,8 +2851,13 @@ body[data-aos-duration='225'] [data-aos],
 ;
     position: relative;
     right: -6rem;
-    top: -6rem;
+    top: -4rem;
     /* opacity: 50%; */
+}
+.mint-btn {
+  font-weight: 700;
+  font-size: 2rem;
+  padding: 10px 96px;
 }
 
   .ca {
