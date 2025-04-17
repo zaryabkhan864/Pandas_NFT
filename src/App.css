@@ -20,6 +20,87 @@ section {
 
 }
 
+
+.navbar-component {
+  padding: 1rem 2rem;
+}
+
+/* Navigation Links */
+.link {
+  color: white;
+  padding: 0 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.link:hover {
+  color: #74e8e2;
+}
+
+/* Animated Gradient Button */
+.btn-gradient {
+  padding: 10px 24px;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  font-weight: 600;
+  background: linear-gradient(180deg, #74e8e2, #0b3839, #74e8e2); /* 👈 bottom-to-top */
+  background-size: 100% 400%;
+  animation: gradientMoveY 5s ease infinite;
+  box-shadow: 0 0 10px rgba(116, 232, 226, 0.6);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn-gradient:hover {
+  box-shadow: 0 0 14px rgba(116, 232, 226, 0.9);
+  transform: translateY(-2px);
+  color: white;
+}
+
+@keyframes gradientMoveY {
+  0% { background-position: 50% 0%; }
+  50% { background-position: 50% 100%; }
+  100% { background-position: 50% 0%; }
+}
+
+.mint-btn {
+  font-weight: 800;
+  font-size: 2rem;
+  padding: 24px 95px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background: linear-gradient(to top, #00787a, #0fd6d6, #00787a);
+  background-size: 100% 300%;
+  background-position: bottom;
+  animation: gradientRise 3s ease infinite;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+  text-transform: uppercase;
+}
+
+.mint-btn:hover {
+  transform: scale(1.05);
+}
+
+@keyframes gradientRise {
+  0% {
+      background-position: bottom;
+  }
+  50% {
+      background-position: top;
+  }
+  100% {
+      background-position: bottom;
+  }
+}
+
+
 .home-Section1 .content img {
   margin-top: 24px;
   margin-bottom: 15px;
@@ -237,6 +318,7 @@ body[data-aos-duration='225'] [data-aos],
 
 .utilities2bg {
   background: url('../public/assets/images/dc46ffe4863dd9e775ae.png') no-repeat 0%;
+
 }
 
 
@@ -350,6 +432,7 @@ body[data-aos-duration='225'] [data-aos],
 
 .home-section4 {
   background: url('../public/assets/images/sdasd.png') no-repeat 50%;
+
   background-color: #000;
   background-position: top;
   background-size: 100%;
@@ -367,8 +450,21 @@ body[data-aos-duration='225'] [data-aos],
 }
 
 .teamcarddown {
-  background: url('../public/assets/images/cs.png') 10%;
+  background: url('../public/assets/images/cs.png') center center;
   background-size: cover;
+  animation: blink-bg 5s infinite;
+}
+.blink-image {
+  animation: blink-bg  1.5s infinite;
+}
+
+/* Blink animation keyframes */
+@keyframes blink-bg {
+  0%, 100% { opacity: 1; }
+  20% { opacity: 0.1; }
+  40% { opacity: 1; }
+  60% { opacity: 0.4; }
+  80% { opacity: 1; }
 }
 
 .home-section4 .line {
@@ -2743,16 +2839,15 @@ body[data-aos-duration='225'] [data-aos],
   }
 
   .rec-c {
-    width: 42rem;
+    width: 25rem;
     /* height: 50rem; */
-    display: flex;
+    display: flex
+;
     position: relative;
-    right: 5rem;
-    top: -9rem;
-
+    right: -6rem;
+    top: -6rem;
     /* opacity: 50%; */
-
-  }
+}
 
   .ca {
     position: relative;

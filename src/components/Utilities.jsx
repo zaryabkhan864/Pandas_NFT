@@ -31,9 +31,13 @@ const Utilities = () => {
         );
     };
     const settings = {
+        dots: false,
+        arrows: true,
+        autoplay: true,
+        autoplaySpeed: 1000,
         infinite: true,
         lazyLoad: true,
-        speed: 300,
+        speed: 500,
         slidesToShow: 5,
         centerMode: true,
         centerPadding: 0,

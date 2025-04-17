@@ -70,7 +70,7 @@ const Team = () => {
                     </div>
 
 
-                    <img className='img-fluid px-0' src="assets/images/121212.png" alt="" />
+                    <img className='img-fluid px-0 blink-image' src="assets/images/121212.png" alt="" />
 
                 </div>
             </div>
